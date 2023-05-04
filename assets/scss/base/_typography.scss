@@ -19,9 +19,10 @@ body {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: calc(22px + (56 - 22) * ((100vw - 320px) / (1920 - 320)));
   line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 h2 {
@@ -46,7 +47,7 @@ h6 {
 }
 
 p {
-  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
   color: rgba(var(--content-color), 1);
 }
 
