@@ -1,0 +1,26 @@
+/**=====================
+     Home Page scss
+==========================**/
+
+.home-section {
+    text-align: center;
+    padding: 150px 0;
+    .home-content {
+        h1 {
+            color: rgba(var(--title-color), 1);
+        }
+        p {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    .home-laptop {
+        perspective: 680px;
+        img {
+            transform-style: preserve-3d;
+            vertical-align: middle;
+            transform: rotateX(50deg);
+            will-change: transform;
+        }
+    }
+}
