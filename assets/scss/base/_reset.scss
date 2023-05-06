@@ -1,9 +1,9 @@
 /*=====================
     Reset CSS start
 ==========================*/
-@media (min-width: 1470px) {
+@media (min-width: 1430px) {
     .container {
-        max-width: 1430px;
+        max-width: 1400px;
     }
 }
 
@@ -14,6 +14,14 @@ section,
 
 .section-b-space {
     padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.section-mt-space {
+    margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.section-mb-space {
+    margin-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .text-content {

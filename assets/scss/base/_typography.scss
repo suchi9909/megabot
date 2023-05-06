@@ -32,27 +32,41 @@ h2 {
 
 h3 {
   font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 400;
 }
 
 h4 {
   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 400;
 }
 
 h5 {
   font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 400;
 }
 
 h6 {
   font-size: 14px;
+  font-weight: 400;
 }
 
 p {
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
   color: rgba(var(--content-color), 1);
+  font-weight: 400;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: rgba(var(--theme-color), 1);
 }
 
 a {
   text-decoration: none;
+  color: rgba(var(--theme-color), 1);
+  &:hover {
+    color: rgba(var(--theme-color), 1);
+  }
 }
 
 ul {
