@@ -6,6 +6,7 @@
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 45px;
+    margin-top: -10px;
     &:after {
         content: "";
         position: absolute;
@@ -39,5 +40,41 @@
     h3 {
         color: rgba(var(--white), 1);
         margin-bottom: 0;
+    }
+}
+
+.title-basic {
+    text-align: center;
+    h2 {
+        color: rgba(var(--theme-color), 1);
+        font-weight: 400;
+        width: 48%;
+        margin: -10px auto 50px;
+    }
+}
+
+.title-horizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+    margin-top: -10px;
+    h2 {
+        width: 45%;
+        color: rgba(var(--white), 1);
+    }
+    p {
+        width: 55%;
+        padding-left: 60px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            background-color: #6e7179;
+            width: 1px;
+        }
     }
 }
