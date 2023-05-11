@@ -28,3 +28,13 @@
         background-color 0.15s ease-out;
     z-index: 999;
 }
+
+@media (max-width: 768px) {
+    #cursor {
+        display: none;
+    }
+
+    #cursor-border {
+        display: none;
+    }
+}

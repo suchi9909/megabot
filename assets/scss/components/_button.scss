@@ -12,11 +12,12 @@
     position: relative;
     display: flex;
     text-align: center;
-    font-size: 20px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
     background: rgba(var(--theme-color), 0.21);
     backdrop-filter: blur(6px);
     border-radius: 8px;
-    padding: 12px 40px;
+    padding: calc(10px + (12 - 10) * ((100vw - 320px) / (1920 - 320)))
+        calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
     span {
         margin: auto;
         color: rgba(var(--theme-color), 1);
@@ -52,8 +53,8 @@
     font-size: 18px;
     width: max-content;
     .icon-arrow {
-        width: 42px;
-        height: 42px;
+        width: calc(36px + (42 - 36) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(36px + (42 - 36) * ((100vw - 320px) / (1920 - 320)));
         background-color: rgba(var(--theme-color), 1);
         border-radius: 100%;
         display: flex;
@@ -76,7 +77,7 @@
             stroke: rgba(var(--black), 1);
             fill: rgba(var(--black), 1);
             transform: rotate(45deg);
-            width: 20px;
+            width: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
             transition: all 0.5s ease;
         }
     }

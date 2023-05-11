@@ -5,16 +5,40 @@ footer {
      .footer-row {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           gap: 20px;
+          @media (max-width: 991px) {
+               gap: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320))) 0;
+               margin: 0 -15px;
+          }
           .footer-main {
                width: 40%;
+               @media (max-width: 1400px) {
+                    width: 37%;
+               }
+               @media (max-width: 991px) {
+                    width: 50%;
+                    padding: 0 15px;
+               }
+               @media (max-width: 768px) {
+                    width: 100%;
+               }
+          }
+          .link-section {
+               @media (max-width: 991px) {
+                    width: 50%;
+                    padding: 0 15px;
+               }
+               @media (max-width: 480px) {
+                    width: 100%;
+               }
           }
      }
      .footer-logo {
-          margin-bottom: 24px;
+          margin-bottom: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
           display: inline-block;
           img {
-               width: 192px;
+               width: calc(162px + (192 - 162) * ((100vw - 320px) / (1920 - 320)));
                height: auto;
           }
      }
@@ -42,12 +66,15 @@ footer {
                color: rgba(var(--black), 1);
                top: 6px;
                right: 6px;
-               padding: 6px 27px;
+               padding: 6px calc(17px + (27 - 17) * ((100vw - 320px) / (1920 - 320)));
                overflow: hidden;
                border-radius: 6px !important;
                font-size: 20px;
                border: 1px solid rgba(var(--theme-color), 1);
                transition: all 0.5s ease;
+               @media (max-width: 1199px) {
+                    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+               }
                &:hover {
                     background-color: transparent;
                     color: rgba(var(--theme-color), 1);
@@ -59,9 +86,17 @@ footer {
           display: flex;
           align-items: center;
           gap: 25px;
+          @media (max-width: 1199px) {
+               margin-top: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+               gap: 20px;
+          }
           li {
                img {
+                    width: 40px;
                     transition: all 0.5s ease;
+                    @media (max-width: 1199px) {
+                         width: 34px;
+                    }
                     &:hover {
                          transform: scale(1.1);
                     }
@@ -76,6 +111,10 @@ footer {
           color: rgba(var(--theme-color), 1);
           margin-bottom: 35px;
           text-transform: uppercase;
+          @media (max-width: 1199px) {
+               font-size: 18px;
+               margin-bottom: calc(15px + (25 - 14) * ((100vw - 320px) / (1920 - 320)));
+          }
      }
      .footer-content {
           padding-left: 33px;
@@ -105,6 +144,9 @@ footer {
                     }
                     + li {
                          margin-top: 25px;
+                         @media (max-width: 1199px) {
+                              margin-top: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
+                         }
                     }
                     &:hover {
                          a {
@@ -120,19 +162,31 @@ footer {
           }
      }
      .footer-copyright {
-          margin-top: 78px;
-          padding: 25px 0;
+          margin-top: calc(38px + (78 - 38) * ((100vw - 320px) / (1920 - 320)));
+          padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))) 0;
           border-top: 1px solid rgba(var(--content-color), 0.4);
           display: flex;
           align-items: center;
           justify-content: space-between;
+          @media (max-width: 576px) {
+               flex-wrap: wrap;
+               gap: 10px;
+               text-align: center;
+          }
           h4 {
                margin-bottom: 0;
                color: rgba(var(--content-color), 1);
+               @media (max-width: 576px) {
+                    width: 100%;
+               }
           }
           ul {
                display: flex;
                align-items: center;
+               @media (max-width: 576px) {
+                    width: 100%;
+                    justify-content: center;
+               }
                li {
                     a {
                          color: rgba(var(--content-color), 1);

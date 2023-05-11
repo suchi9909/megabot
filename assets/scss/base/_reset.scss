@@ -7,21 +7,28 @@
     }
 }
 
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 section,
 .section-t-space {
-    padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .section-b-space {
-    padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .section-mt-space {
-    margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+    margin-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .section-mb-space {
-    margin-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .text-content {
