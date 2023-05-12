@@ -1,0 +1,39 @@
+/**=====================
+     Login Page scss
+==========================**/
+.login-section {
+    background-image: url("../images/login-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 0 160px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .row {
+        width: 100%;
+    }
+    .login-box {
+        background: rgba(58, 237, 177, 0.05);
+        border: 1px solid rgba(var(--title-color), 0.1);
+        backdrop-filter: blur(6px);
+        border-radius: 6px;
+        padding: 50px;
+        height: 100%;
+        text-align: center;
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: rgba(var(--white), 1);
+            margin-bottom: 35px;
+            span {
+                color: rgba(var(--theme-color), 1);
+            }
+        }
+        .nav-tabs {
+            .nav-item {
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -28,6 +28,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
   }
+  &.inner-bg {
+    &:after {
+      background-image: url(../images/inner-bg.png);
+    }
+  }
 }
 
 h1 {

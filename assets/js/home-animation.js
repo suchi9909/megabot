@@ -20,3 +20,4 @@ window.addEventListener("scroll", () => {
         object.style.transform = `rotate(${rotationAngle}deg)`;
     });
 });
+

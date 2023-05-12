@@ -55,6 +55,21 @@
 
 .title-basic {
     text-align: center;
+    &.fs-sm {
+        h2 {
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+            width: 38%;
+            @media (max-width: 1199px) {
+                width: 58%;
+            }
+            @media (max-width: 767px) {
+                width: 78%;
+            }
+            @media (max-width: 360px) {
+                width: 100%;
+            }
+        }
+    }
     h2 {
         color: rgba(var(--theme-color), 1);
         font-weight: 400;

@@ -673,8 +673,8 @@
                 }
             }
             .feature-icon {
-                width: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
-                height: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
+                width: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
                 position: relative;
                 transition: all 0.5s ease;
                 img {
@@ -779,6 +779,7 @@
 }
 
 .pricing-section {
+    overflow: hidden;
     .pricing-box {
         position: relative;
         .handing-cls {

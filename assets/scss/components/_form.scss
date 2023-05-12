@@ -12,3 +12,20 @@
         }
     }
 }
+
+.auth-form {
+    .form-label {
+        color: rgba(var(--title-color), 1);
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+    .form-control {
+        background: rgba(var(--title-color), 0.1);
+        border-radius: 4px;
+        border: none;
+        padding: calc(10px + (13 - 10) * ((100vw - 320px) / (1920 - 320)))
+            calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+        box-shadow: none;
+        outline: none;
+        color: rgba(var(--content-color), 1);
+    }
+}
