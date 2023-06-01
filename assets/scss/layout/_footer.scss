@@ -63,7 +63,7 @@ footer {
           .btn-basic {
                position: absolute;
                background-color: rgba(var(--theme-color), 1);
-               color: rgba(var(--black), 1);
+               color: rgba(var(--dark-title), 1);
                top: 6px;
                right: 6px;
                padding: 6px calc(17px + (27 - 17) * ((100vw - 320px) / (1920 - 320)));
