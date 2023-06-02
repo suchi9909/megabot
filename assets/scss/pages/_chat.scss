@@ -9,6 +9,10 @@
     height: 100vh;
     width: 100px;
     background-color: #0b1523;
+    [dir="rtl"] & {
+        left: unset;
+        right: 0;
+    }
     .logo-icon {
         display: flex;
         padding: 22px 0;
@@ -73,12 +77,16 @@
 
 .inner-menu-panel {
     width: 300px;
-    left: 0;
-    position: absolute;
+    left: 100px;
+    position: fixed;
     top: 0;
     background: #141d2b;
     height: 100vh;
     padding: 18px 15px;
+    [dir="rtl"] & {
+        right: 100px;
+        left: unset;
+    }
     .search-box {
         background: #0d121f;
         position: relative;
@@ -89,6 +97,10 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
+            [dir="rtl"] & {
+                left: unset;
+                right: 15px;
+            }
         }
         .iconsax {
             svg [fill] {
@@ -103,6 +115,9 @@
             padding: 13px 15px 13px 50px;
             color: rgba(var(--title-color), 1);
             box-shadow: none;
+            [dir="rtl"] & {
+                padding: 13px 50px 13px 15px;
+            }
             &::placeholder {
                 color: rgba(var(--content-color), 1);
             }
@@ -141,6 +156,12 @@
     position: relative;
     padding-left: 300px;
     background: #141d2b;
+    [dir="rtl"] & {
+        padding-left: 0;
+        padding-right: 300px;
+        margin-left: 00;
+        margin-right: 100px;
+    }
     .chat-header {
         display: flex;
         align-items: center;
@@ -153,6 +174,10 @@
         padding: 24px 0;
         z-index: 1;
         background-color: #0a101a;
+        [dir="rtl"] & {
+            left: unset;
+            right: 430px;
+        }
         h3 {
             font-size: 24px;
             font-weight: 500;

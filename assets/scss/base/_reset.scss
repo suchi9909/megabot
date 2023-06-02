@@ -42,3 +42,29 @@ section,
 .text-theme-color {
     color: rgba(var(--theme-color1), 1) !important;
 }
+
+.rtl {
+    direction: rtl;
+}
+
+.theme-controller {
+    position: fixed;
+    right: -14px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%) rotate(-90deg);
+    background-color: rgba(var(--theme-color), 1);
+    border-radius: 7px;
+    [dir="rtl"] & {
+        left: -14px;
+        right: unset;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        padding: 5px 18px;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        text-transform: uppercase;
+        outline: none;
+    }
+}

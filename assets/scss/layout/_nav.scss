@@ -72,6 +72,15 @@ header {
                     top: 50%;
                     transform: translateY(-50%) scale(0);
                     transition: all 0.5s ease;
+
+                    [dir="rtl"] & {
+                         left: unset;
+                         right: -7px;
+                    }
+
+                    @media (max-width: 1199px) {
+                         display: none;
+                    }
                }
 
                &.active,
@@ -88,6 +97,10 @@ header {
                &.dropdown {
                     .nav-link {
                          padding-right: 30px;
+                         [dir="rtl"] & {
+                              padding-right: 8px;
+                              padding-left: 30px;
+                         }
                          &::before {
                               position: absolute;
                               content: "\EA4E";
@@ -97,7 +110,7 @@ header {
 
                               [dir="rtl"] & {
                                    right: unset;
-                                   left: -16px;
+                                   left: 0;
                               }
 
                               @media (max-width: 1199px) {
@@ -128,6 +141,13 @@ header {
                visibility: hidden;
                display: block !important;
                transform: translateY(-15px);
+
+               @media (max-width: 1199px) {
+                    position: relative;
+                    min-width: unset;
+                    margin-top: 0;
+                    background-color: transparent;
+               }
 
                .sub-dropdown-hover {
                     position: relative;
@@ -569,8 +589,11 @@ header {
      }
 
      .navbar-toggler-icon {
-          width: auto;
-          height: auto;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(var(--theme-color), 1);
+          border-radius: 5px;
+          margin-right: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -579,8 +602,12 @@ header {
           -webkit-text-fill-color: rgba(var(--title-color), 1);
           -webkit-opacity: 1;
 
-          @media (max-width: 767px) {
-               margin-right: 0;
+          .iconsax {
+               svg {
+                    [stroke] {
+                         stroke: rgba(var(--dark-title), 1);
+                    }
+               }
           }
      }
 
@@ -773,10 +800,21 @@ header {
                     left: 0;
                     box-shadow: none;
 
+                    [dir="rtl"] & {
+                         left: unset;
+                         right: 0;
+                    }
+
                     @media (max-width: 1199px) {
                          width: calc(300px + (320 - 300) * ((100vw - 1200px) / (1920 - 1200)));
                          transform: translateX(-100%);
                          z-index: 7;
+                         transition: all 0.3s ease;
+                         background-color: #141d2b;
+
+                         [dir="rtl"] & {
+                              transform: translateX(100%);
+                         }
                     }
                }
           }
@@ -794,11 +832,14 @@ header {
                padding: 0;
                margin: -10px 0;
                font-size: 16px;
+               filter: invert(1);
+               opacity: 0.5;
           }
 
           h5 {
-               color: rgba(var(--theme-color), 1);
+               color: rgba(var(--content-color), 1);
                font-weight: 600;
+               font-size: 18px;
           }
      }
 
@@ -986,8 +1027,8 @@ header {
                     margin-top: 0;
                     box-shadow: -1px 0 10px 0 rgba(var(--title-color), 0.07),
                          5px 20px 40px 0 rgba(var(--title-color), 0.04);
-                    background-color: rgba(var(--white), 1);
-                    border-color: rgba(var(--white), 1);
+                    background-color: #0b1828;
+                    border: 1px solid rgba(var(--theme-color), 0.1);
                     padding: 20px;
                     border-radius: 0;
 
@@ -1004,6 +1045,12 @@ header {
                     li {
                          display: block;
                          width: 100%;
+
+                         &.active {
+                              a {
+                                   color: rgba(var(--theme-color), 1);
+                              }
+                         }
 
                          &:first-child {
                               .dropdown-item {
@@ -1035,6 +1082,7 @@ header {
                          position: relative;
                          transition: all 0.3s ease-in-out;
                          z-index: 0;
+                         color: rgba(var(--title-color), 0.8);
 
                          &:hover {
                               &::after {
@@ -1317,6 +1365,7 @@ header {
                               justify-content: space-between;
                               color: rgba(var(--content-color), 1);
                               font-weight: 700;
+                              padding-left: 10px;
 
                               &:hover {
                                    color: rgba(var(--theme-color), 1);
@@ -1357,7 +1406,7 @@ header {
 
                               .dropdown-item {
                                    color: rgba(var(--content-color), 1);
-                                   font-size: 14px;
+                                   font-size: 16px;
 
                                    &:hover {
                                         color: rgba(var(--theme-color), 1);
