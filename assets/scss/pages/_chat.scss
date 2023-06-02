@@ -206,6 +206,144 @@
             }
         }
     }
+    .main-section{
+        padding-top: calc(40px + 50 * (100vw - 320px) / 1600); 
+        .card{
+            background-color: rgba(var(--content-color), 0.1);
+            border-radius: 10px;
+            .card-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                border-bottom: 1px solid rgba(var(--title-color), 0.23);
+                .header-option{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    label{
+                        width: 130px;
+                        font-weight: 500;
+                    }
+                    .form-select{
+                        font-weight: 500;
+                        padding: 0.5rem 0.25rem 0.5rem 0.75rem;
+                        background-color: #0d121f;
+                        color: rgba(var(--title-color), 1);
+                        appearance: none;
+                        border: 1px solid rgba(var(--title-color), 0.23);
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                h3{
+                    font-weight: 500;
+                }
+            }
+            .inner-card{
+                border: 1px solid #0a101a;
+                .iconsax {
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                        [stroke] {
+                            stroke: rgba(var(--white), 1);
+                        }
+                    }
+                }
+                .card-header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    border: none;
+                    background: #0a101a;
+                    h4{
+                        font-weight: 500;
+                    }
+                }
+                .card-body{
+                    padding: 30px;
+                    h3{
+                        font-weight: 600;
+                        color: rgba(var(--theme-color), 1);
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                    ul{
+                        padding-left: 30px;
+                        li{
+                            list-style: disc;
+                            display: list-item;
+                            font-size: calc(14px + 4 * (100vw - 320px) / 1600);
+                            color: rgba(var(--white), 0.75);
+                            font-weight: 400;
+                            margin-bottom:10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+.subscription-continue{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    button{
+        margin: 0;
+        font-size: 20px;
+    }
+    a{
+        font-size: 18px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.select-plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0;
+    color: rgba(var(--white), 1);
+    background: #0a101a;
+    border: none;
+    gap: 4px;
+    padding: 16px 40px;
+    border-radius: 8px;
+        .iconsax{
+            svg{
+                width: 25px;
+                height: 25px;
+                [stroke] {
+                    stroke: #133538;
+                }
+                 [fill]{
+                    fill: rgba(var(--white), 1);
+                }
+            }
+        }
+        &.no-select-plan{
+        color: rgba(var(--theme-color), 1);
+        gap: 4px;
+        background: rgba(var(--theme-color), 0.05);
+        border: 1px sold rgba(var(--theme-color), 1);
+        .iconsax{
+            svg{
+                [stroke]{
+                    stroke: #133538;
+                }
+                [fill]{
+                    fill: rgba(var(--theme-color), 1);
+                }
+            }
+        }
+    }
 }
 
 .main-chat {
@@ -215,3 +353,4 @@
     padding-bottom: 110px;
     background-color: #0a101a;
 }
+
