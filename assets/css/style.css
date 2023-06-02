@@ -3126,8 +3126,8 @@ footer .footer-copyright ul li + li {
 
 .inner-menu-panel {
   width: 300px;
-  left: 100px;
-  position: fixed;
+  left: 0;
+  position: absolute;
   top: 0;
   background: #141d2b;
   height: 100vh;
@@ -3200,9 +3200,11 @@ footer .footer-copyright ul li + li {
 }
 
 .main-wrapper {
-  margin-left: 400px;
+  margin-left: 100px;
   min-height: 100vh;
   position: relative;
+  padding-left: 300px;
+  background: #141d2b;
 }
 .main-wrapper .chat-header {
   display: -webkit-box;
@@ -3290,6 +3292,7 @@ footer .footer-copyright ul li + li {
   position: relative;
   height: 100vh;
   padding-bottom: 110px;
+  background-color: #0a101a;
 }
 
 /**=====================
