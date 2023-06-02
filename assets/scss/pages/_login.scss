@@ -140,9 +140,17 @@
         position: absolute;
         bottom: calc(30px + (80 - 30) * ((100vw - 991px) / (1920 - 991)));
         left: calc(30px + (90 - 30) * ((100vw - 991px) / (1920 - 991)));
+        [dir="rtl"] & {
+            left: unset;
+            right: calc(30px + (90 - 30) * ((100vw - 991px) / (1920 - 991)));
+        }
         @media (max-width: 991px) {
             bottom: 30px;
             left: 120px;
+            [dir="rtl"] & {
+                left: unset;
+                right: 120px;
+            }
         }
         img {
             animation: flip 3s linear infinite alternate;
@@ -156,8 +164,16 @@
     top: calc(40px + (60 - 40) * ((100vw - 991px) / (1920 - 991)));
     left: calc(40px + (160 - 40) * ((100vw - 991px) / (1920 - 991)));
     z-index: 1;
+    [dir="rtl"] & {
+        left: unset;
+        right: calc(40px + (160 - 40) * ((100vw - 991px) / (1920 - 991)));
+    }
     @media (max-width: 991px) {
         top: calc(20px + (60 - 20) * ((100vw - 320px) / (1920 - 320)));
         left: calc(15px + (60 - 15) * ((100vw - 320px) / (1920 - 320)));
+        [dir="rtl"] & {
+            left: unset;
+            right: calc(15px + (60 - 15) * ((100vw - 320px) / (1920 - 320)));
+        }
     }
 }

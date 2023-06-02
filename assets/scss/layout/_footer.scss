@@ -50,12 +50,16 @@ footer {
           margin-top: 20px;
           .form-control {
                border: 1px solid rgba(var(--title-color), 0.1) !important;
-               padding: 14px;
+               padding: 14px 164px 14px 14px;
                background-color: transparent !important;
                border-radius: 4px;
                color: rgba(var(--title-color), 1) !important;
                box-shadow: none;
                outline: none;
+               [dir="rtl"] & {
+                    padding: 14px 14px 14px 164px;
+                    text-align: right;
+               }
                &::placeholder {
                     color: rgba(var(--content-color), 1);
                }
@@ -72,6 +76,10 @@ footer {
                font-size: 20px;
                border: 1px solid rgba(var(--theme-color), 1);
                transition: all 0.5s ease;
+               [dir="rtl"] & {
+                    right: unset;
+                    left: 6px;
+               }
                @media (max-width: 1199px) {
                     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
                }
@@ -118,6 +126,10 @@ footer {
      }
      .footer-content {
           padding-left: 33px;
+          [dir="rtl"] & {
+               padding-left: 0;
+               padding-right: 33px;
+          }
           ul {
                li {
                     display: block;
@@ -129,6 +141,10 @@ footer {
                          padding-left: 0;
                          position: relative;
                          transition: all 0.5s ease;
+                         [dir="rtl"] & {
+                              padding-left: 0;
+                              padding-right: 0;
+                         }
                          &:after {
                               content: "\f1af";
                               font-family: remixicon !important;
@@ -140,6 +156,10 @@ footer {
                               opacity: 0;
                               visibility: hidden;
                               transition: all 0.5s ease;
+                              [dir="rtl"] & {
+                                   left: unset;
+                                   right: -40px;
+                              }
                          }
                     }
                     + li {
@@ -151,10 +171,18 @@ footer {
                     &:hover {
                          a {
                               padding-left: 5px;
+                              [dir="rtl"] & {
+                                   padding-left: 0;
+                                   padding-right: 5px;
+                              }
                               &:after {
                                    left: -22px;
                                    opacity: 1;
                                    visibility: visible;
+                                   [dir="rtl"] & {
+                                        left: unset;
+                                        right: -22px;
+                                   }
                               }
                          }
                     }
@@ -195,6 +223,14 @@ footer {
                          padding-left: 8px;
                          margin-left: 8px;
                          border-left: 1px solid rgba(var(--content-color), 1);
+                         [dir="rtl"] & {
+                              padding-left: 0;
+                              padding-right: 8px;
+                              margin-left: 0;
+                              margin-right: 8px;
+                              border-left: none;
+                              border-right: 1px solid rgba(var(--content-color), 1);
+                         }
                     }
                }
           }

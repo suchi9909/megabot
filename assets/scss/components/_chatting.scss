@@ -117,16 +117,29 @@
     gap: 10px;
     z-index: 1;
 
+    [dir="rtl"] & {
+        left: unset;
+        right: 430px;
+    }
+
     .scan-icon {
         position: absolute;
         right: 130px;
         bottom: 20px;
+        [dir="rtl"] & {
+            left: 130px;
+            right: unset;
+        }
     }
 
     .mic-icon {
         position: absolute;
         right: 90px;
         bottom: 20px;
+        [dir="rtl"] & {
+            left: 90px;
+            right: unset;
+        }
     }
 
     .msger-send-btn {
@@ -166,6 +179,10 @@
         width: calc(100% - 60px - 10px);
         background: rgba(var(--content-color), 0.25);
         position: relative;
+
+        [dir="rtl"] & {
+            padding: 10px 30px 10px 110px;
+        }
 
         &::placeholder {
             color: rgba(var(--content-color), 1);
