@@ -73,14 +73,14 @@ if (tapTopTopBox) {
 
 
 /*===================
-18. Theme Setting js
+03. Theme Setting js
 =======================*/
 const body = document.querySelector("body");
 const themeSettingMarkup = `
 <!-- Theme Setting Star -->
 <div class="theme-controller">
     <div class="light-dark-box">
-            <button id="rtl-btn" class="btnTheme "><i data-feather="repeat"></i> <span class="text-value">Rtl</span></button>
+            <button id="rtl-btn" class="btnTheme "><i class="iconsax" data-icon="repeat"></i> <span class="text-value">Rtl</span></button>
     </div>
 </div>
 <!-- Theme Setting End -->  
@@ -108,9 +108,9 @@ themeBtnParent?.addEventListener("click", function (e) {
         rtlBtn.id = "ltr-btn";
         rtlBtn.querySelector(".text-value").textContent = "Ltr"
         html.setAttribute("dir", "rtl")
-        rtlLink.href = "assets/css/vendors/bootstrap.rtl.css";
+        rtlLink.href = "../assets/css/vendors/bootstrap.rtl.css";
         rtlBtn.classList.add("rtlBtnEl")
-        localStorage.setItem('rtlcss', 'assets/css/vendors/bootstrap.rtl.css');
+        localStorage.setItem('rtlcss', '../assets/css/vendors/bootstrap.rtl.css');
         localStorage.setItem('dir', 'rtl');
         localStorage.setItem('rtlBtnId', 'ltr-btn');
         localStorage.setItem('textContentRtl', 'Ltr');
@@ -119,8 +119,8 @@ themeBtnParent?.addEventListener("click", function (e) {
         rtlBtn.id = "rtl-btn"
         rtlBtn.querySelector(".text-value").textContent = "Rtl"
         html.setAttribute("dir", "")
-        rtlLink.href = "assets/css/vendors/bootstrap.css";
-        localStorage.setItem('rtlcss', 'assets/css/vendors/bootstrap.css');
+        rtlLink.href = "../assets/css/vendors/bootstrap.css";
+        localStorage.setItem('rtlcss', '../assets/css/vendors/bootstrap.css');
         localStorage.setItem('dir', '');
         localStorage.setItem('rtlBtnId', 'rtl-btn');
         localStorage.setItem('textContentRtl', ' Rtl');
@@ -131,7 +131,7 @@ themeBtnParent?.addEventListener("click", function (e) {
 rtlBtn.id = localStorage.getItem("rtlBtnId") ? localStorage.getItem("rtlBtnId") : "rtl-btn";
 rtlBtn.querySelector(".text-value").textContent = localStorage.getItem("textContentRtl") ? localStorage.getItem("textContentRtl") : "Rtl";
 html.setAttribute("dir", localStorage.getItem("dir"));
-rtlLink.href = localStorage.getItem('rtlcss') ? localStorage.getItem('rtlcss') : 'assets/css/vendors/bootstrap.css';
+rtlLink.href = localStorage.getItem('rtlcss') ? localStorage.getItem('rtlcss') : '../assets/css/vendors/bootstrap.css';
 
 
 

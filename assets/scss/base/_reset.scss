@@ -49,14 +49,19 @@ section,
 
 .theme-controller {
     position: fixed;
-    right: -14px;
+    right: -31px;
     top: 50%;
     z-index: 2;
     transform: translateY(-50%) rotate(-90deg);
     background-color: rgba(var(--theme-color), 1);
     border-radius: 7px;
+    .iconsax {
+        svg [fill] {
+            fill: rgba(var(--dark-title), 1);
+        }
+    }
     [dir="rtl"] & {
-        left: -14px;
+        left: -31px;
         right: unset;
     }
     button {
@@ -66,5 +71,8 @@ section,
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
         outline: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 }

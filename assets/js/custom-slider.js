@@ -1,7 +1,7 @@
 /*====================
    swiper custom js
 =======================*/
-var swiper = new Swiper(".featureSlider", {
+var featureSlider = new Swiper(".featureSlider", {
     pagination: {
         el: ".feature-pagination",
         type: "progressbar",

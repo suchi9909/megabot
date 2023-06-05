@@ -601,6 +601,7 @@
     position: relative;
     z-index: 1;
     padding-bottom: calc(80px + (230 - 80) * ((100vw - 320px) / (1920 - 320)));
+
     .feature-left {
         position: absolute;
         left: 0;
@@ -648,6 +649,9 @@
         padding: 34px;
         border-radius: 4px;
         position: relative;
+        [dir="rtl"] & {
+            direction: rtl;
+        }
         @media (max-width: 1400px) {
             padding: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
         }
@@ -788,6 +792,25 @@
     .swiper-wrapper {
         padding: 1px;
     }
+    .pagination-effect {
+        width: 12.8%;
+        position: absolute;
+        bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        img {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: calc(26px + (43 - 26) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(26px + (43 - 26) * ((100vw - 320px) / (1920 - 320)));
+            transition: all 300ms ease;
+        }
+    }
     .swiper-pagination {
         width: 12.8%;
         height: 10px;
@@ -800,20 +823,10 @@
         left: 50%;
         transform: translateX(-50%);
         overflow: visible;
+        z-index: 0;
         .swiper-pagination-progressbar-fill {
             background: rgba(var(--theme-color), 1);
             border-radius: 20px;
-            &:after {
-                content: "";
-                position: absolute;
-                background-image: url("../svg/pagination-robot.svg");
-                display: block;
-                background-size: 43px;
-                right: 0;
-                width: 43px;
-                height: 43px;
-                top: -20px;
-            }
         }
     }
 }
@@ -994,6 +1007,9 @@
         }
     }
     .testimonial-box {
+        [dir="rtl"] & {
+            direction: rtl;
+        }
         .content-sec {
             display: flex;
             align-items: flex-start;
