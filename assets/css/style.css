@@ -3612,6 +3612,10 @@ footer .footer-copyright ul li + li {
 .main-wrapper .main-section .card .card-header h3 {
   font-weight: 500;
 }
+.main-wrapper .main-section .card .card-footer {
+  border-top: 1px dashed rgba(var(--title-color), 0.23);
+  padding: 20px;
+}
 .main-wrapper .main-section .card .inner-card {
   border: 1px solid #0a101a;
 }
@@ -3636,6 +3640,10 @@ footer .footer-copyright ul li + li {
   border: none;
   background: #0a101a;
 }
+.main-wrapper .main-section .card .inner-card .card-header img {
+  width: 30px;
+  height: 30px;
+}
 .main-wrapper .main-section .card .inner-card .card-header h4 {
   font-weight: 500;
 }
@@ -3657,7 +3665,84 @@ footer .footer-copyright ul li + li {
   font-size: calc(14px + 4 * (100vw - 320px) / 1600);
   color: rgba(var(--white), 0.75);
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+}
+.main-wrapper .main-section.faq-section .accordion .accordion-item .accordion-button {
+  font-size: calc(16px + 2 * (100vw - 320px) / 1600);
+}
+.main-wrapper .main-section .my-account .user-detail {
+  background-image: url(../images/user/robo-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
+  border-radius: 8px;
+}
+.main-wrapper .main-section .my-account .user-main {
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.main-wrapper .main-section .my-account .user-main .user-profile {
+  position: relative;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main-wrapper .main-section .my-account .user-main .user-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid rgba(var(--white), 1);
+}
+.main-wrapper .main-section .my-account .user-main .iconsax {
+  position: absolute;
+  right: -10px;
+  bottom: 10px;
+  background-color: rgba(var(--white), 1);
+  border-radius: 100%;
+}
+.main-wrapper .main-section .my-account .user-main .iconsax svg {
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+}
+.main-wrapper .main-section .my-account .user-main .user-option {
+  margin-top: 20px;
+  text-align: center;
+}
+.main-wrapper .main-section .my-account .user-main .user-option h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(var(--theme-color), 1);
+  margin-bottom: 0;
+}
+.main-wrapper .main-section .my-account .user-main .user-option p {
+  color: rgba(var(--white), 1);
+}
+.main-wrapper .main-section .my-account .msger-inputarea {
+  position: unset;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+.main-wrapper .main-section .my-account .msger-inputarea label {
+  color: rgba(var(--white), 1);
+}
+.main-wrapper .main-section .my-account .msger-inputarea input {
+  width: 100%;
+}
+.main-wrapper .main-section .setting-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.main-wrapper .main-section .setting-btn button {
+  margin: 0;
 }
 
 .subscription-continue {
