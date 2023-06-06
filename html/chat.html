@@ -38,8 +38,6 @@
 </head>
 
 <body>
-
-
     <section class="chatting-wrapper pt-0">
         <div class="menu-panel">
             <a href="index.html" class="logo-icon">
@@ -70,10 +68,19 @@
                         aria-controls="help" aria-selected="false"><i class="iconsax" data-icon="question-message
                         "></i></button>
                 </li>
-                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ratings" class="nav-item"
+                <!-- <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ratings" class="nav-item"
                     role="presentation">
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ratings" type="button" role="tab"
                         aria-controls="ratings" aria-selected="false"><i class="iconsax" data-icon="star"></i></button>
+                </li> -->
+                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ratings" class="nav-item"
+                    role="presentation">
+                    <!-- <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ratings" type="button" role="tab"
+                        aria-controls="ratings" aria-selected="false"><i class="iconsax" data-icon="star"></i>
+                    </button> -->
+                    <button type="button" class="btn btn-primary nav-link" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"><i class="iconsax" data-icon="star"></i>
+                    </button>
                 </li>
                 <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Settings" class="nav-item"
                     role="presentation">
@@ -146,10 +153,120 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history" tabindex="0">
-                <div class="main-wrapper">
-                    <div class="chat-header">
-                        <h3>Detailed history</h3>
-                        <div class="header-option">
+                <div class="main-wrapper p-0">
+                    <div class="main-section">
+                        <div class="container card p-0">
+                            <div class="card-header">
+                                <h3 class="text-white">Detailed History</h3>
+                                <form class="auth-form">
+                                    <div class="form-group">
+                                        <i class="iconsax" data-icon="search-normal-2"></i>
+                                        <input type="search" class="form-control" placeholder="Search here">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-body px-4">
+                                <ul class="history-sec">
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/dino.png">
+                                            <p>What is app development ?</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Chat</li>
+                                                <li>2 min ago</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/dolly.png">
+                                            <p>Dino has sent you message.</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Image</li>
+                                                <li>50 min ago</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/henny.png">
+                                            <p>Marvel has sent you an image.</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Personal</li>
+                                                <li>Yesterday</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/kettie.png">
+                                            <p>Wishes of father’s day</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Translation</li>
+                                                <li>26 March, 2023</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/king.png">
+                                            <p>Marvel has sent you an image.</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Social media</li>
+                                                <li>25 March, 2023</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/marvel.png">
+                                            <p>“How are you ?” Translate it</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Essay writing</li>
+                                                <li> 25 March, 2023</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/slophie.png">
+                                            <p>Include a hashtag in your caption for the goa photo and some music
+                                                suggestions.</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Chat</li>
+                                                <li>25 March, 2023</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="history-main">
+                                        <div class="history-detail">
+                                            <img src="../assets/images/history/dino.png">
+                                            <p>Write essay about “Cow”</p>
+                                        </div>
+                                        <div class="history-time">
+                                            <ul>
+                                                <li>Image</li>
+                                                <li>23 March, 2023</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
 
                         </div>
                     </div>
@@ -175,7 +292,7 @@
                                     <div class="col-xl-4 col-sm-6 col-12">
                                         <div class="card inner-card">
                                             <div class="card-header">
-                                                <img src="assets/svg/pricing/weekly.svg" class="img-fluid" alt="">
+                                                <img src="../assets/svg/pricing/weekly.svg" class="img-fluid" alt="">
                                                 <h4 class="text-white mb-0">Weekly Plan</h4>
                                             </div>
                                             <div class="card-body">
@@ -197,7 +314,7 @@
                                     <div class="col-xl-4 col-sm-6 col-12">
                                         <div class="card inner-card">
                                             <div class="card-header">
-                                                <img src="assets/svg/pricing/monthly.svg" class="img-fluid" alt="">
+                                                <img src="../assets/svg/pricing/monthly.svg" class="img-fluid" alt="">
                                                 <h4 class="text-white mb-0">Monthly Plan</h4>
                                             </div>
                                             <div class="card-body">
@@ -219,7 +336,7 @@
                                     <div class="col-xl-4 col-sm-6 col-12">
                                         <div class="card inner-card">
                                             <div class="card-header">
-                                                <img src="assets/svg/pricing/yearly.svg" class="img-fluid" alt="">
+                                                <img src="../assets/svg/pricing/yearly.svg" class="img-fluid" alt="">
                                                 <h4 class="text-white mb-0">Lifetime Plan</h4>
                                             </div>
                                             <div class="card-body">
@@ -257,8 +374,7 @@
                         <div class="container card p-0">
                             <div class="card-header">
                                 <h3 class="text-white title-basic aos-init aos-animate" data-aos="fade-up"
-                                    data-aos-duration="1000" data-aos-delay="100">If you have any questions, please
-                                    consult our FAQ</h3>
+                                    data-aos-duration="1000" data-aos-delay="100">FAQ</h3>
                             </div>
                             <div class="card-body px-4">
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -436,13 +552,12 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="ratings" role="tabpanel" aria-labelledby="ratings" tabindex="0">
-                <div class="main-wrapper p-0">
-                </div>
-            </div>
+            <!-- <div class="tab-pane fade" id="ratings" role="tabpanel" aria-labelledby="ratings" tabindex="0">
+               
+            </div> -->
             <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings" tabindex="0">
                 <div class="main-wrapper p-0">
-                    <div class="main-section d-flex gap-4 pb-5 flex-column">
+                    <div class="main-section d-flex gap-4 flex-column">
                         <div class="container card p-0">
                             <div class="card-header">
                                 <h3 class="text-white">My account</h3>
@@ -452,7 +567,7 @@
                                     <div class="user-detail"></div>
                                     <div class="user-main">
                                         <div class="user-profile">
-                                            <img src="assets/images/user/4.jpg" class="img-fluid">
+                                            <img src="../assets/images/user/4.jpg" class="img-fluid">
                                             <i class="iconsax" data-icon="camera"></i>
                                         </div>
                                         <div class="user-option">
@@ -461,7 +576,7 @@
                                         </div>
                                     </div>
 
-                                    <form class="msger-inputarea">
+                                    <form class="msger-inputarea mb-0">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="mb-3">
@@ -500,7 +615,6 @@
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                         <div class="container card p-0">
                             <div class="card-header">
@@ -508,7 +622,7 @@
                             </div>
                             <div class="card-body px-4">
                                 <div class="my-account">
-                                    <form class="msger-inputarea">
+                                    <form class="msger-inputarea mb-0">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="mb-3">
@@ -543,6 +657,38 @@
             </div>
         </div>
     </section>
+    <div class="modal rating-modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Your Rating</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="comment" class="form-label text-white">Type Something</label>
+                            <textarea type="search" class="form-control" placeholder="Write your review here"
+                                id="comment"></textarea>
+                        </div>
+                    </form>
+                    <ul data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="star-rating">
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-submit m-0" data-bs-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
