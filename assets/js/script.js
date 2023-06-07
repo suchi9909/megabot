@@ -133,5 +133,3 @@ rtlBtn.querySelector(".text-value").textContent = localStorage.getItem("textCont
 html.setAttribute("dir", localStorage.getItem("dir"));
 rtlLink.href = localStorage.getItem('rtlcss') ? localStorage.getItem('rtlcss') : '../assets/css/vendors/bootstrap.css';
 
-
-
