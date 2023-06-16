@@ -117,18 +117,51 @@
     gap: 10px;
     z-index: 1;
 
+    @media (max-width:991px) {
+        width: calc(100% - 140px);
+        left: 120px;
+    }
+
+    @media (max-width:767px) {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+
     [dir="rtl"] & {
         left: unset;
         right: 430px;
+    }
+
+    .navbar-toggler {
+        &.msger-send-btn {
+            .iconsax {
+                svg {
+                    [stroke] {
+                        stroke: rgba(var(--dark-title), 1);
+                    }
+                }
+            }
+        }
     }
 
     .scan-icon {
         position: absolute;
         right: 130px;
         bottom: 20px;
+
         [dir="rtl"] & {
             left: 130px;
             right: unset;
+        }
+
+        @media (max-width:575px) {
+            right: 90px;
+            bottom: 10px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
@@ -136,9 +169,20 @@
         position: absolute;
         right: 90px;
         bottom: 20px;
+
         [dir="rtl"] & {
             left: 90px;
             right: unset;
+        }
+
+        @media (max-width:575px) {
+            right: 60px;
+            bottom: 10px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
@@ -154,6 +198,12 @@
         align-items: center;
         justify-content: center;
         border: none;
+
+        @media (max-width:575px) {
+            width: 40px;
+            height: 40px;
+        }
+
         .iconsax {
             svg {
                 [stroke] {
@@ -191,6 +241,13 @@
         &:focus {
             outline: none;
         }
+
+        @media (max-width:575px) {
+            height: 40px;
+            padding: 10px 100px 10px 10px;
+            font-size: 14px;
+
+        }
     }
 }
 
@@ -204,14 +261,20 @@
     width: 100%;
     height: 100%;
     text-align: center;
+
     img {
         mix-blend-mode: luminosity;
         opacity: 0.6;
     }
+
     h3 {
         font-size: 24px;
         color: rgba(var(--theme-color), 1);
         font-weight: 500;
         margin-top: 15px;
+
+        @media (max-width:575px) {
+            font-size: 20px;
+        }
     }
 }

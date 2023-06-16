@@ -28,7 +28,7 @@ gulp
 // Watch function
 function watch() {
   browserSync.init({
-    proxy: "localhost/megabot/index.html",
+    proxy: "localhost/megabot/html/index.html",
   });
   gulp.watch("assets/scss/**/*.scss", style);
   gulp.watch("**/*.html").on("change", browserSync.reload);
