@@ -744,7 +744,7 @@ li {
 .auth-form .form-group .iconsax {
   position: absolute;
   left: 14px;
-  bottom: 13px;
+  bottom: calc(10px + 3 * (100vw - 320px) / 1600);
   border-right: 1px solid rgba(var(--content-color), 1);
   padding-right: 14px;
 }
@@ -5478,6 +5478,7 @@ footer .footer-copyright ul li + li {
     min-height: unset;
     padding: 30px calc(10px + 5 * (100vw - 320px) / 1600);
     margin-top: calc(60px + 50 * (100vw - 320px) / 1600);
+    margin-bottom: calc(60px + 50 * (100vw - 320px) / 1600);
   }
 }
 .login-section .login-box h2 {

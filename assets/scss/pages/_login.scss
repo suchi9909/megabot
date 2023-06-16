@@ -31,6 +31,7 @@
             min-height: unset;
             padding: 30px calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
             margin-top: calc(60px + (110 - 60) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: calc(60px + (110 - 60) * ((100vw - 320px) / (1920 - 320)));
         }
         h2 {
             font-size: calc(26px + (30 - 26) * ((100vw - 991px) / (1920 - 991)));

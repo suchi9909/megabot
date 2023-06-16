@@ -43,7 +43,7 @@
         .iconsax {
             position: absolute;
             left: 14px;
-            bottom: 13px;
+            bottom: calc(10px + (13 - 10) * ((100vw - 320px) / (1920 - 320)));
             border-right: 1px solid rgba(var(--content-color), 1);
             padding-right: 14px;
             svg [stroke] {

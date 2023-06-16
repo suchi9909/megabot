@@ -94,7 +94,8 @@
                                     <a href="" data-cursor="pointer" class="btn-solid w-100 text-center mt-3">Log me
                                         in</a>
                                     <h4 class="text-title text-center mt-2">Don’t have an account ? <a
-                                            data-cursor="pointer" href="register.html">Sign up</a>
+                                            data-cursor="pointer" onclick="signupClick()" href="javascript:void(0)">Sign
+                                            up</a>
                                     </h4>
                                     <div class="divider">
                                         <h3>or sign in with</h3>
@@ -138,8 +139,8 @@
                                     <a href="" data-cursor="pointer" class="btn-solid w-100 text-center mt-4">Sign
                                         up</a>
                                     <h4 class="text-title text-center mt-2">Already have an account <a
-                                            data-cursor="pointer" data-bs-toggle="tab" data-bs-target="#login-tab-pane"
-                                            href="javascript:void(0)">Sign in</a>
+                                            data-cursor="pointer" onclick="loginClick()" href="javascript:void(0)">Sign
+                                            in</a>
                                     </h4>
                                 </form>
                             </div>
@@ -173,6 +174,9 @@
 
     <!-- iconsax js -->
     <script src="../assets/js/iconsax.js"></script>
+
+    <!-- tab js-->
+    <script src="../assets/js/tab.js"></script>
 
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
