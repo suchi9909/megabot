@@ -117,12 +117,12 @@
     gap: 10px;
     z-index: 1;
 
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
         width: calc(100% - 140px);
         left: 120px;
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
         left: 20px;
         width: calc(100% - 40px);
     }
@@ -154,9 +154,9 @@
             right: unset;
         }
 
-        @media (max-width:575px) {
+        @media (max-width: 575px) {
             right: 90px;
-            bottom: 10px;
+            bottom: 15px;
 
             svg {
                 width: 20px;
@@ -175,9 +175,9 @@
             right: unset;
         }
 
-        @media (max-width:575px) {
+        @media (max-width: 575px) {
             right: 60px;
-            bottom: 10px;
+            bottom: 15px;
 
             svg {
                 width: 20px;
@@ -199,9 +199,9 @@
         justify-content: center;
         border: none;
 
-        @media (max-width:575px) {
-            width: 40px;
-            height: 40px;
+        @media (max-width: 575px) {
+            width: 50px;
+            height: 50px;
         }
 
         .iconsax {
@@ -242,11 +242,10 @@
             outline: none;
         }
 
-        @media (max-width:575px) {
-            height: 40px;
+        @media (max-width: 575px) {
+            height: 50px;
             padding: 10px 100px 10px 10px;
             font-size: 14px;
-
         }
     }
 }
@@ -273,7 +272,7 @@
         font-weight: 500;
         margin-top: 15px;
 
-        @media (max-width:575px) {
+        @media (max-width: 575px) {
             font-size: 20px;
         }
     }

@@ -160,16 +160,6 @@
                             </div>
                         </div>
                         <div class="msger-chat">
-                            <!-- <div class="msg right-msg">
-                                <div class="msg-bubble">
-                                    <div class="msg-text">Hey</div>
-                                </div>
-                            </div>
-                            <div class="msg left-msg">
-                                <div class="msg-bubble">
-                                    <div class="msg-text">Hey!!</div>
-                                </div>
-                            </div> -->
                         </div>
 
                         <form class="msger-inputarea">
@@ -220,7 +210,7 @@
                                 <ul class="history-sec">
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/dino.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>What is app development ?</p>
                                         </div>
                                         <div class="history-time">
@@ -232,7 +222,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/dolly.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Dino has sent you message.</p>
                                         </div>
                                         <div class="history-time">
@@ -244,7 +234,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/henny.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Marvel has sent you an image.</p>
                                         </div>
                                         <div class="history-time">
@@ -256,7 +246,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/kettie.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Wishes of father’s day</p>
                                         </div>
                                         <div class="history-time">
@@ -268,7 +258,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/king.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Marvel has sent you an image.</p>
                                         </div>
                                         <div class="history-time">
@@ -280,7 +270,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/marvel.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>“How are you ?” Translate it</p>
                                         </div>
                                         <div class="history-time">
@@ -292,7 +282,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/slophie.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Include a hashtag in your caption for the goa photo and some music
                                                 suggestions.</p>
                                         </div>
@@ -305,7 +295,7 @@
                                     </li>
                                     <li class="history-main">
                                         <div class="history-detail text-truncate">
-                                            <img src="../assets/images/history/dino.png">
+                                            <i class="iconsax" data-icon="message-text"></i>
                                             <p>Write essay about “Cow”</p>
                                         </div>
                                         <div class="history-time">
@@ -812,8 +802,20 @@
     <script src="../assets/js/script.js"></script>
 
     <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+        function handleMediaQuery(mediaQuery) {
+            if (mediaQuery.matches) {
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            }
+        }
+
+        const mediaQuery = window.matchMedia('(min-width: 576px)');
+
+        handleMediaQuery(mediaQuery);
+
+        mediaQuery.addListener(handleMediaQuery);
     </script>
 
 

@@ -394,6 +394,10 @@
         margin-bottom: 12px;
         line-height: 1.5;
     }
+    h4 {
+        font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+        color: rgba(var(--title-color), 1);
+    }
     p,
     li {
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
