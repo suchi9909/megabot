@@ -3407,7 +3407,7 @@ footer .footer-copyright ul li + li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 1px solid rgba(var(--theme-color), 1);
+  border-bottom: 1px solid rgba(var(--title-color), 0.15);
 }
 @media (max-width: 767px) {
   .menu-panel .logo-icon {
@@ -3606,6 +3606,11 @@ footer .footer-copyright ul li + li {
   font-size: calc(16px + 4 * (100vw - 320px) / 1600);
   padding: calc(6px + 5 * (100vw - 320px) / 1600) 15px;
   border-radius: 6px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.inner-menu-panel .inner-links-list li a:hover {
+  color: rgba(var(--theme-color), 1);
 }
 .inner-menu-panel .inner-links-list li + li {
   margin-top: 10px;

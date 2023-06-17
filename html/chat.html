@@ -116,18 +116,18 @@
                                     <i class="iconsax" data-icon="search-normal-2"></i>
                                     <input type="text" class="form-control" placeholder="Search here..">
                                 </div>
-                                <ul class="inner-links-list">
-                                    <li class="active"><a href="">Ask anything</a></li>
-                                    <li><a href="">Image generator</a></li>
-                                    <li><a href="">Content writer</a></li>
-                                    <li><a href="">Code generator</a></li>
-                                    <li><a href="">Translate anything</a></li>
-                                    <li><a href="">Social media</a></li>
-                                    <li><a href="">Email generator</a></li>
-                                    <li><a href="">Personal advise</a></li>
-                                    <li><a href="">Password generator</a></li>
-                                    <li><a href="">Travel/hangout</a></li>
-                                    <li><a href="">Essay writer</a></li>
+                                <ul class="inner-links-list" id="innerLink">
+                                    <li class="active"><a href="#!" data-title="Ask anything">Ask anything</a></li>
+                                    <li><a href="#!" data-title="Image generator">Image generator</a></li>
+                                    <li><a href="#!" data-title="Content writer">Content writer</a></li>
+                                    <li><a href="#!" data-title="Code generator">Code generator</a></li>
+                                    <li><a href="#!" data-title="Translate anything">Translate anything</a></li>
+                                    <li><a href="#!" data-title="Social media">Social media</a></li>
+                                    <li><a href="#!" data-title="Email generator">Email generator</a></li>
+                                    <li><a href="#!" data-title="Personal advise">Personal advise</a></li>
+                                    <li><a href="#!" data-title="Password generator">Password generator</a></li>
+                                    <li><a href="#!" data-title="Travel/hangout">Travel/hangout</a></li>
+                                    <li><a href="#!" data-title="Essay writer">Essay writer</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -142,13 +142,13 @@
                             <a href="index.html" class="logo-icon d-flex d-md-none">
                                 <img src="../assets/svg/logo-icon.svg" class="img-fluid">
                             </a>
-                            <h3>Chat with AI</h3>
+                            <h3 id="targetDiv">Ask anything</h3>
                         </div>
                         <div class="header-option">
                             <a class="del-btn" data-cursor="pointer" href=""><i class="iconsax"
                                     data-icon="trash"></i></a>
-                            <a class="premium-btn" data-cursor="pointer" href=""><i class="iconsax"
-                                    data-icon="crown-2"></i> Get
+                            <a class="premium-btn" id="subscriptionBtn" data-cursor="pointer" href="#!"><i
+                                    class="iconsax" data-icon="crown-2"></i> Get
                                 <span>premium</span></a>
                         </div>
                     </div>
@@ -795,29 +795,14 @@
     <!-- iconsax js -->
     <script src="../assets/js/iconsax.js"></script>
 
+    <!-- chat page js -->
+    <script src="../assets/js/chat-page.js"></script>
+
     <!-- iconsax js -->
     <script src="../assets/js/chatting.js"></script>
 
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
-
-    <script>
-
-
-        function handleMediaQuery(mediaQuery) {
-            if (mediaQuery.matches) {
-                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-            }
-        }
-
-        const mediaQuery = window.matchMedia('(min-width: 576px)');
-
-        handleMediaQuery(mediaQuery);
-
-        mediaQuery.addListener(handleMediaQuery);
-    </script>
-
 
 </body>
 
