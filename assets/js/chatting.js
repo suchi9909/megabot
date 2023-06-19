@@ -4,7 +4,7 @@ const msgerChat = get(".msger-chat");
 
 const BOT_MSGS = ["Hey !!", "Can you please send me $20.59 ?", "Received it", "Can you please share your QR-code ?", "Oky..!! ", "Thank you..!!", "Yes, I’ll send in 10 min"];
 
-// Icons made by Freepik from www.flaticon.com
+
 const BOT_IMG = "../../assets/images/icons/pro1.png";
 const PERSON_IMG = "../../assets/images/icons/profile.png";
 const BOT_NAME = "BOT";

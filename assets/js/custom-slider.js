@@ -5,7 +5,6 @@ var featureSlider = new Swiper(".featureSlider", {
     pagination: {
         el: ".feature-pagination",
         type: "progressbar",
-        // type: "fraction",
     },
 });
 

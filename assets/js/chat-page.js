@@ -3,20 +3,16 @@
 ==========================**/
 
 var subscriptionBtn = document.getElementById("subscriptionBtn");
-
 subscriptionBtn.addEventListener("click", function () {
-
     var divs = document.querySelector("[data-bs-target='#subscription']");
-
     if (divs) {
         divs.click();
     }
-
 });
 
 
-/**=====================
-     Li active
+/**===========================
+     li active & change content
 ==========================**/
 var parentElement = document.getElementById("innerLink");
 var listItems = parentElement.getElementsByTagName("li");

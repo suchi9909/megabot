@@ -17,16 +17,6 @@
     @media (max-width: 1199px) {
         padding-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
     }
-    // &:after {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     bottom: 0;
-    //     width: 100%;
-    //     background-image: url("../svg/breadcrumb-bottom.svg");
-    //     height: 200px;
-    //     background-position: bottom;
-    // }
     .breadcrumb-content {
         display: flex;
         align-items: center;

@@ -9,6 +9,11 @@
     height: 100vh;
     width: 100px;
     background-color: #0b1523;
+    [dir="rtl"] & {
+        left: unset;
+        right: 0;
+    }
+
     @media (max-width: 991px) {
         background-color: #232831;
     }
@@ -18,13 +23,11 @@
         z-index: 2;
         left: -190px;
         transition: all 0.25s linear;
+        [dir="rtl"] & {
+            left: unset;
+            right: -190px;
+        }
     }
-
-    [dir="rtl"] & {
-        left: unset;
-        right: 0;
-    }
-
     .logo-icon {
         display: flex;
         padding: 22px 0;
@@ -243,6 +246,10 @@
     @media (max-width: 991px) {
         left: -300px;
         transition: all 0.25s linear;
+        [dir="rtl"] & {
+            left: unset;
+            right: -300px;
+        }
     }
 
     .inner-close {
@@ -253,6 +260,10 @@
         color: rgba(var(--theme-color), 1);
         margin-top: 0;
         margin-bottom: 15px;
+        [dir="rtl"] & {
+            margin-left: unset;
+            margin-right: auto;
+        }
     }
 }
 
@@ -262,11 +273,21 @@
             .inner-menu-panel {
                 left: 0;
                 transition: all 0.25s linear;
+
+                [dir="rtl"] & {
+                    left: unset;
+                    right: 0;
+                }
             }
 
             .menu-panel {
                 left: 0;
                 transition: all 0.25s linear;
+
+                [dir="rtl"] & {
+                    left: unset;
+                    right: 0;
+                }
             }
         }
     }
@@ -278,6 +299,11 @@
     background: transparent;
     border: none;
     margin-right: 10px;
+
+    [dir="rtl"] & {
+        margin-left: 10px;
+        margin-right: auto;
+    }
 
     .iconsax {
         svg {
@@ -294,20 +320,25 @@
     position: relative;
     padding-left: 300px;
     background: #141d2b;
-
-    @media (max-width: 991px) {
-        padding-left: 0;
-    }
-
-    @media (max-width: 767px) {
-        margin-left: 0;
-    }
-
     [dir="rtl"] & {
         padding-left: 0;
         padding-right: 300px;
         margin-left: 00;
         margin-right: 100px;
+    }
+
+    @media (max-width: 991px) {
+        padding-left: 0;
+        [dir="rtl"] & {
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-left: 0;
+        [dir="rtl"] & {
+            margin-right: 0;
+        }
     }
 
     .fixed-header {
@@ -394,19 +425,27 @@
         z-index: 1;
         background-color: #0a101a;
 
+        [dir="rtl"] & {
+            left: unset;
+            right: 430px;
+        }
+
         @media (max-width: 991px) {
             left: 120px;
             width: calc(100% - 140px);
+
+            [dir="rtl"] & {
+                right: 120px;
+            }
         }
 
         @media (max-width: 767px) {
             left: 20px;
             width: calc(100% - 40px);
-        }
 
-        [dir="rtl"] & {
-            left: unset;
-            right: 430px;
+            [dir="rtl"] & {
+                right: 20px;
+            }
         }
 
         h3 {
@@ -492,7 +531,6 @@
     }
 
     .main-section {
-        // padding-top: calc(75px + 95 * (100vw - 320px) / 1600);
         padding-top: calc(80px + 100 * (100vw - 320px) / 1600);
         padding-bottom: calc(75px + 95 * (100vw - 320px) / 1600);
 
@@ -829,14 +867,25 @@
                                     top: 50%;
                                     left: 0;
                                     border-radius: 100%;
+                                    [dir="rtl"] & {
+                                        left: unset;
+                                        right: 0;
+                                    }
                                 }
                             }
 
                             + li {
                                 border-left: 1px solid rgba(var(--title-color), 0.15);
+                                [dir="rtl"] & {
+                                    border-left: none;
+                                    border-right: 1px solid rgba(var(--title-color), 0.15);
+                                }
 
                                 @media (max-width: 675px) {
                                     border: none;
+                                    [dir="rtl"] & {
+                                        border: none;
+                                    }
                                 }
                             }
                         }
@@ -948,7 +997,6 @@
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
-    // margin-top: 30px;
 
     button {
         margin: 0;
@@ -1039,7 +1087,6 @@
     .modal-dialog {
         .modal-content {
             background-color: #26292c;
-            // border: 1px solid rgba(var(--theme-color), 0.5);
 
             .modal-header {
                 border-bottom: none;

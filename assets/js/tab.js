@@ -1,5 +1,6 @@
-
-
+/*====================
+   Auth tab
+=======================*/
 function loginClick() {
     var loginTab = document.getElementById('login-tab');
     loginTab.click();

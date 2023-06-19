@@ -117,19 +117,27 @@
     gap: 10px;
     z-index: 1;
 
+    [dir="rtl"] & {
+        left: unset;
+        right: 430px;
+    }
+
     @media (max-width: 991px) {
         width: calc(100% - 140px);
         left: 120px;
+
+        [dir="rtl"] & {
+            right: 120px;
+        }
     }
 
     @media (max-width: 767px) {
         left: 20px;
         width: calc(100% - 40px);
-    }
 
-    [dir="rtl"] & {
-        left: unset;
-        right: 430px;
+        [dir="rtl"] & {
+            right: 20px;
+        }
     }
 
     .navbar-toggler {
